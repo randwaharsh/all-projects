@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+      *{
+    font-family:'Gill Sans';
+    font-weight: 00;
+    font-style: normal;
+    font-size: 30px;
+      }
+
+  button {
+    padding: 10px 20px;
+        }
+
+  </style>
+  
+  <title>Document</title>
+</head>
+<body>
+  <h1> chickenlegpiece counter </h1>
+  <button onclick="console.log(chickenlegpiece);  document.getElementById('chickenCount').textContent = chickenlegpiece;"> show chickenlegpiece </button>
+  <button onclick="(chickenlegpiece = chickenlegpiece +`🍗`); console.log(chickenlegpiece); document.getElementById('chickenCount').textContent = chickenlegpiece;"> add 🍗 </button>
+  <button onclick="(chickenlegpiece = chickenlegpiece + `🍗🍗`); console.log(chickenlegpiece);  document.getElementById('chickenCount').textContent = chickenlegpiece;"> + 2🍗 </button>
+  <button onclick="(chickenlegpiece = chickenlegpiece + `🍗🍗🍗`); console.log(chickenlegpiece);  document.getElementById('chickenCount').textContent = chickenlegpiece;"> + 3🍗 </button>
+  <button onclick="(chickenlegpiece = chickenlegpiece + `🍗🍗🍗🍗🍗🍗🍗🍗🍗🍗`); console.log(chickenlegpiece);  document.getElementById('chickenCount').textContent = chickenlegpiece;"> + 10🍗 </button>
+  <button onclick="chickenlegpiece = ``"> reset </button>
+
+  <h1 id="chickenCount"></h1>
+
+<script> let chickenlegpiece = ``; </script>
+</body>
+</html> 
